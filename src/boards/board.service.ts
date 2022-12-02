@@ -4,21 +4,21 @@ import { v1 as uuid } from 'uuid';
 
 @Injectable()
 export class BoardsService {
-    private boards: Board[] = [];
+  private boards: Board[] = [];
 
-    getBoard(): Board[]{
-        return this.boards;
-    }
+  getBoard(): Board[] {
+    return this.boards;
+  }
 
-    createBoard(title: string, description: string): Board{
-        const board: Board = {
-            id: uuid,
-            title,
-            description,
-            status: BoardStatus.PUBLIC
-        }
+  createBoard(title: string, description: string): Board {
+    const board: Board = {
+      id: uuid,
+      title,
+      description,
+      status: BoardStatus.PUBLIC,
+    };
 
-        this.boards.push(board);
-        return board;
-    }
-}  
+    this.boards.push(board);
+    return board;
+  }
+}
