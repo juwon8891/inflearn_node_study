@@ -8,4 +8,6 @@ export interface Board {
 export enum BoardStatus {
   PUBLIC = 'PUBLIC',
   PRIVATE = 'PRIVATE',
+  DEFAYLT = 'DEFAYLT',
+  PROTECTED = 'PROTECTED',
 }
